@@ -20,7 +20,7 @@ class TestFunctions(unittest.TestCase):
         filename = cons.CSV_FILE_PATH
         TestOutput = lib_csv.GetData(filename)
 
-        #Sample expected output from the demo CSV file processing
+        #Sample expected output for the demo CSV file processing
         ExpetedOutput = [('Company-A', '2000', 'Mar', 1000), ('Company-B', '2007', 'Mar', 986), ('Company-C', '1993', 'Jun', 995), ('Company-D', '2002', 'Apr', 999), ('Company-E', '2008', 'Oct', 997)]
 
         self.assertEqual(ExpetedOutput, TestOutput)
